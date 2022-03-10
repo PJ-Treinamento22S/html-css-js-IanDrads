@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piupiuwer</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="logo-menu">
+          <img src="images/Logo.svg" alt="Logo" />
+        </div>
+        <div class="options-menu">
+          <img src="images/Home.svg" alt="Home" />
+          <img src="images/Profile.svg" alt="Perfil" />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- seção feed começa -->
+      <section id="feed">
+        <div class="piu, piu-none">
+          <div class="name">
+            <img class="image" src="images/User.svg" alt="Usuário" />
+            <h1 class="user-name">NeymarJr</h1>
+          </div>
+          <div class="piu-card">
+            <p class="piu-text"></p>
+            <div class="piu-interactions">
+              <button class="like">
+                <img class="image-heart" src="images/Heart.svg" alt="Like" />
+                <h3 class="like-number">123</h3>
+              </button>
+              <button class="favorite">
+                <img
+                  class="image-favorite"
+                  src="images/Star.svg"
+                  alt="Favoritos"
+                />
+              </button>
+              <button class="delete">
+                <img
+                  class="image-delete"
+                  src="images/Trash.svg"
+                  alt="Deletar"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- seção feed acaba -->
+
+      <!-- seção feed-piar começa -->
+      <section id="feed-piar">
+        <div class="pesquisa">
+          <button class="pesquisar" id="pesquisar">
+            <img src="images/Search.svg" alt="Pesquisar" />
+          </button>
+          <input id="pesquisar-text"></input>
+        </div>
+        <div class="piar">
+          <div class="name">
+            <img class="image" src="images/User.svg" alt="Usuário" />
+            <h1 class="user-name">Ian_Drades</h1>
+          </div>
+          <div class="piar-card">
+            <textarea
+              type="text"
+              class="piar-text, piar-text-red"
+              id="piar-text"
+            ></textarea>
+            <div class="subtext">
+              <span id="piar-characters">0</span> / 140
+              <span id="erro"></span>
+            </div>
+            <button class="enviar" id="enviar">
+              <img src="images/Send.svg" alt="Enviar" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- seção feed-piar acaba -->
+    </main>
+
+    <!-- messages.js -->
+    <script src="messages.js" type="text/javascript"></script>
+  </body>
+</html>

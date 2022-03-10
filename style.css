@@ -1,0 +1,247 @@
+/* ========== RESET ==========*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+}
+
+/*========== VARIABLES ==========*/
+
+:root {
+  --width-reference: 90rem;
+  --height-reference: 64rem;
+  --grid-sides: 7rem;
+  --grid-top: 5.5rem;
+  --primary-dark: #87986a;
+  --primary: #b5c99a;
+  --primary-light: #e9f5db;
+  --primary-light-linear: linear-gradient(
+    180deg,
+    #fcfcfc 0%,
+    var(--primary-light) 100%
+  );
+  --body-text: #272727;
+  --secondary-body-text: #bcbcbc;
+  --grey-light: #efefef;
+}
+
+/*========== BASE ==========*/
+
+/*========== LAYOUT ==========*/
+
+/* body está fixo, deixarei responsivo na task com o mentor */
+body {
+  width: var(--width-reference);
+  height: var(--height-reference);
+  display: flex;
+  padding-left: var(--grid-sides);
+}
+
+main {
+  width: 62rem;
+  margin-top: var(--grid-top);
+  margin-left: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font: 800 2.5rem 'Nunito', sans-serif;
+  color: var(--body-text);
+}
+
+h2,
+.pesquisa input {
+  font: 600 2rem 'Nunito', sans-serif;
+  color: var(--secondary-body-text);
+}
+
+h3 {
+  font: 400 2rem 'Nunito', sans-serif;
+  color: var(--primary-dark);
+}
+
+p {
+  font: 400 2rem 'Nunito', sans-serif;
+  color: var(--body-text);
+}
+
+/*========== HEADER ==========*/
+
+header {
+  width: 9.5rem;
+  height: 46.5rem;
+  background-color: var(--grey-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 3rem 3rem;
+  /*position: fixed;*/
+}
+
+.menu {
+  height: 40.5rem;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-menu {
+  margin-top: 3rem;
+}
+
+.options-menu {
+  height: 21.5rem;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*========== FEED ==========*/
+
+#feed {
+  width: 36.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.piu {
+  margin-bottom: 3rem;
+}
+
+.piu-none {
+  display: none;
+}
+
+.name {
+  width: 34.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name {
+  width: 28rem;
+}
+
+.image {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 0.2rem var(--primary-dark);
+}
+
+.piu-text {
+  width: 28rem;
+  height: 11.5rem;
+}
+
+.piu-card {
+  width: 33.25rem;
+  height: 21rem;
+  margin-left: 2.75rem;
+  background: var(--primary-light-linear);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 3rem;
+}
+
+.piu-interactions {
+  width: 28rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+}
+
+/*========== FEED-PIAR ==========*/
+
+#feed-piar {
+  width: 21.75rem;
+  height: 41.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pesquisa {
+  width: 21.375rem;
+  height: 5.5rem;
+  padding-left: 1.5rem;
+  border-radius: 2rem;
+  background: var(--primary-light);
+  display: flex;
+  align-items: center;
+}
+
+.pesquisa input {
+  margin-left: 2rem;
+  width: 12rem;
+}
+
+#feed-piar .name {
+  width: 21rem;
+}
+
+.piar-card {
+  width: 19rem;
+  height: 25rem;
+  margin-left: 2.75rem;
+  background: var(--primary-light-linear);
+  border-radius: 3rem;
+}
+
+.piar-card textarea {
+  width: 13.5rem;
+  height: 17rem;
+  margin-left: 2.75rem;
+  margin-top: 2rem;
+}
+
+.piar-card span {
+  margin-left: 3rem;
+}
+
+.piar-card img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 14.5rem;
+}
+
+.piar-text {
+  overflow-wrap: break-word;
+}
+
+.piar-text-red {
+  color: red;
+}
+
+.piar-characters-red {
+  color: red;
+}
+
+#piar-subtext {
+  display: flex;
+}
+
+#erro {
+  color: red;
+  font-size: 0.6rem;
+}
